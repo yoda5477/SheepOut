@@ -72,7 +72,11 @@ public class SheepBehavior : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDr
 					newTorque = Mathf.Max (-MaxTorque, rotToDo * Torque);
 				}
 				amort = Mathf.Min(Mathf.Max (1, Mathf.Abs(newTorque)/10),MaxAmort)+1;
-				newForce = new Vector2 ((0) * Force * dist / amort, (1) * Force * dist / amort);
+				if (Mathf.Abs(rotToDo)<95){
+					newForce = new Vector2 ((0) * Force * dist / amort, (1) * Force * dist / amort);
+				}else {
+					newForce = new Vector2 ((0) * Force * dist / amort, (-1) * Force * dist / amort/5);
+				}
 				this.GetComponent<Rigidbody2D> ().AddRelativeForce(newForce,ForceMode2D.Impulse);
 				this.GetComponent<Rigidbody2D> ().AddTorque (newTorque, ForceMode2D.Impulse); 
 				//moveLine.GetComponent<RectTransform> ().localEulerAngles = new Vector3 (0, 0, angle * cross);
