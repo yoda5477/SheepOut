@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class ManagerBehavior : MonoBehaviour,IPointerDownHandler {
+public class ManagerBehavior : MonoBehaviour {
 	
 	public float snap = 0;
 	public float current = 0;
@@ -21,10 +21,5 @@ public class ManagerBehavior : MonoBehaviour,IPointerDownHandler {
 			snap = Time.realtimeSinceStartup;
 		}
 	}
-	
-	public void OnPointerDown (PointerEventData eventData) {
-		snap = Time.realtimeSinceStartup;
-		Time.timeScale = 1-Time.timeScale;
-	}
-	
+
 }
