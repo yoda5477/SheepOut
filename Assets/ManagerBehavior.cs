@@ -20,6 +20,8 @@ public class ManagerBehavior : MonoBehaviour {
 			Time.timeScale = 1-Time.timeScale;
 			snap = Time.realtimeSinceStartup;
 		}
+		if (Time.timeScale == 1) {
+		}
 	}
 
 }
