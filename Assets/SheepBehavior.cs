@@ -26,6 +26,8 @@ public class SheepBehavior : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDr
 		if (moveLine == null) {
 			moveLine = (GameObject)Instantiate (dragLineProto, transform.position, transform.rotation);
 			moveLine.transform.SetParent (transform.parent);
+			moveLine.transform.SetSiblingIndex(1);
+
 		}
 		//		Time.timeScale = 0;
 		moveLine.transform.position = transform.position;
