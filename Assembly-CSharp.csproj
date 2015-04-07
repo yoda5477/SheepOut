@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CheckBehavior.cs" />
+     <Compile Include="Assets\ChronoBehavior.cs" />
      <Compile Include="Assets\ManagerBehavior.cs" />
      <Compile Include="Assets\SheepBehavior.cs" />
  <Reference Include="UnityEngine.UI">
