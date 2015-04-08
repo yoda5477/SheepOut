@@ -8,10 +8,10 @@ public class ChronoBehavior : MonoBehaviour {
 	// Update is called once per frame
 
 	void Init () {
-		Animation anim = GetComponent<Animation> ();
-		foreach (AnimationState state in anim) {
+		GetComponent<Animator> ().speed = 0.5F;
+/*		foreach (AnimationState state in anim) {
 			state.speed=0.5F;
-		}
+		}*/
 	}
 
 	void FixedUpdate () {
