@@ -19,8 +19,11 @@ public class ManagerBehavior : MonoBehaviour {
 		if (Time.realtimeSinceStartup > snap + delai) {
 			Time.timeScale = 1-Time.timeScale;
 			snap = Time.realtimeSinceStartup;
-		}
-		if (Time.timeScale == 1) {
+			if (Time.timeScale == 1) {
+				transform.parent.BroadcastMessage ("RunOrders",SendMessageOptions.DontRequireReceiver);
+			} else {
+				transform.parent.BroadcastMessage ("ChooseOrders",SendMessageOptions.DontRequireReceiver);
+			}
 		}
 	}
 
