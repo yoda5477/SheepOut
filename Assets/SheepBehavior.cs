@@ -85,4 +85,12 @@ public class SheepBehavior : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDr
 			}
 		}
 	}
+
+	public void RunOrders(){
+		transform.GetChild(0).GetComponent<Animator>().SetBool ("ordering",false);
+	}
+
+	public void ChooseOrders(){
+		transform.GetChild(0).GetComponent<Animator>().SetBool ("ordering",true);
+	}
 }

@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SheepBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ChronoBehavior.cs">
     <Files>
-      <File FileName="SheepOut.sln" Line="41" Column="1" />
-      <File FileName="Assets\SheepBehavior.cs" Line="40" Column="35" />
+      <File FileName="Assets\ChronoBehavior.cs" Line="11" Column="42" />
       <File FileName="Assets\ManagerBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\ChronoBehavior.cs" Line="8" Column="18" />
+      <File FileName="Assets\SheepBehavior.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="K:\Unity Projects\SheepOut\Assets\ManagerBehavior.cs" line="23" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
