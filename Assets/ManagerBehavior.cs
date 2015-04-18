@@ -7,8 +7,11 @@ public class ManagerBehavior : MonoBehaviour {
 	public float snap = 0;
 	public float current = 0;
 	public float delai = 10;
-	public bool ordering = true;
-	
+	public bool ordering = false;
+	public int currentPlayer = 0;
+	public bool transitioning = false;
+
+
 	// Update is called once per frame
 	void Start(){
 		Time.timeScale = 0;
