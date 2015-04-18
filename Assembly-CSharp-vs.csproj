@@ -49,6 +49,7 @@
      <Compile Include="Assets\CheckBehavior.cs" />
      <Compile Include="Assets\ChronoBehavior.cs" />
      <Compile Include="Assets\ManagerBehavior.cs" />
+     <Compile Include="Assets\OutLimitsBehavior.cs" />
      <Compile Include="Assets\SheepBehavior.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>K:/Tools/Unity 5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
